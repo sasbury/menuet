@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/caseymrm/menuet"
+	"github.com/sasbury/menuet"
 )
 
 var alertsCatalog = []menuet.Alert{
@@ -110,7 +110,8 @@ func menuItems() []menuet.MenuItem {
 
 func alerts() []menuet.MenuItem {
 	alerts := make([]menuet.MenuItem, 0, len(alertsCatalog))
-	for _, alert := range alertsCatalog {
+	for _, a := range alertsCatalog {
+		alert := a
 		text := alert.MessageText
 		if text == "" {
 			text = alert.InformativeText
@@ -127,7 +128,8 @@ func alerts() []menuet.MenuItem {
 
 func notifs() []menuet.MenuItem {
 	notifs := make([]menuet.MenuItem, 0, len(notificationsCatalog))
-	for _, notif := range notificationsCatalog {
+	for _, n := range notificationsCatalog {
+		notif := n
 		text := notif.Title
 		if text == "" {
 			text = notif.Subtitle

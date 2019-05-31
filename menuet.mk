@@ -3,7 +3,7 @@
 # For example:
 #
 #   APP=Hello World
-#   include $(GOPATH)/src/github.com/caseymrm/menuet/menuet.mk
+#   include $(GOPATH)/src/github.com/sasbury/menuet/menuet.mk
 #
 # Optional features:
 # 
@@ -18,7 +18,7 @@
 #
 # To release your app, put a Github access token in GITHUB_ACCESS_TOKEN (https://github.com/settings/tokens/new).
 # You may wish to use an environment variable to avoid checking it in:
-#   REPO=caseymrm/menuet
+#   REPO=sasbury/menuet
 #   export GITHUB_ACCESS_TOKEN="asdfasdfasdf..."
 
 ifndef APP

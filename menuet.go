@@ -32,7 +32,7 @@ type Application struct {
 	// If Version and Repo are set, checks for updates every day
 	AutoUpdate struct {
 		Version string
-		Repo    string // For example "caseymrm/menuet"
+		Repo    string // For example "sasbury/menuet"
 	}
 
 	alertChannel          chan AlertClicked

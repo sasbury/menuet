@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/caseymrm/menuet"
+	"github.com/sasbury/menuet"
 )
 
 func helloClock() {

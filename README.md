@@ -1,6 +1,8 @@
 # Menuet
 Golang library to create menubar apps- programs that live only in OSX's NSStatusBar
 
+This is based on [https://github.com/caseymrm/menuet](https://github.com/caseymrm/menuet) with a few bug fixes.
+
 ## Development Status
 
 Under active development. API still changing rapidly.
@@ -8,28 +10,13 @@ Under active development. API still changing rapidly.
 ## Installation
 menuet requires OS X.
 
-`go get github.com/caseymrm/menuet`
+`go get github.com/sasbury/menuet`
 
 ## Documentation
 
-https://godoc.org/github.com/caseymrm/menuet
+https://godoc.org/github.com/sasbury/menuet
 
-## Apps built with Menuet
-
-* [Why Awake?](https://github.com/caseymrm/whyawake) - shows why your Mac can't sleep, and lets you force it awake
-
-<img src="https://github.com/caseymrm/whyawake/raw/master/static/cansleep.png" width="25%"/> <img src="https://github.com/caseymrm/whyawake/raw/master/static/cantsleep.png" width="25%"/> <img src="https://github.com/caseymrm/whyawake/raw/master/static/prevented.png" width="25%"/>
-
-
-* [Not a Fan](https://github.com/caseymrm/notafan) - shows your Mac's temperature and fan speed, notifies you when your CPU is being throttled due to excessive heat
-
-<img src="https://github.com/caseymrm/notafan/raw/master/notafan.png" width="25%"/> <img src="https://github.com/caseymrm/notafan/raw/master/throttled.png" width="25%"/> <img src="https://github.com/caseymrm/notafan/raw/master/notthrottled.png" width="25%"/>
-
-* [Traytter](https://github.com/caseymrm/traytter) - minimalist Twitter client for following a few users
-
-<img src="https://github.com/caseymrm/traytter/raw/master/traytter.png" width="50%"/>
-
-## [Hello World](https://github.com/caseymrm/menuet/tree/master/cmd/helloworld)
+## [Hello World](https://github.com/sasbury/menuet/tree/master/cmd/helloworld)
 
 ```go
 package main
@@ -37,7 +24,7 @@ package main
 import (
 	"time"
 
-	"github.com/caseymrm/menuet"
+	"github.com/sasbury/menuet"
 )
 
 func helloClock() {
@@ -56,13 +43,13 @@ func main() {
 
 ```
 
-![Output](https://github.com/caseymrm/menuet/raw/master/static/helloworld.gif)
+![Output](https://github.com/sasbury/menuet/raw/master/static/helloworld.gif)
 
-## [Catalog](https://github.com/caseymrm/menuet/tree/master/cmd/catalog)
+## [Catalog](https://github.com/sasbury/menuet/tree/master/cmd/catalog)
 
 The catalog app is useful for trying many of the possible combinations of features.
 
-<img src="https://github.com/caseymrm/menuet/raw/master/static/catalog.png" width="50%"/>
+<img src="https://github.com/sasbury/menuet/raw/master/static/catalog.png" width="50%"/>
 
 ## Advanced Features
 
@@ -79,7 +66,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/caseymrm/menuet"
+	"github.com/sasbury/menuet"
 )
 
 func temperature(woeid string) (temp, unit, text string) {
@@ -271,7 +258,7 @@ func main() {
 }
 ```
 
-![Output](https://github.com/caseymrm/menuet/raw/master/static/weather.png)
+![Output](https://github.com/sasbury/menuet/raw/master/static/weather.png)
 
 ## License
 
